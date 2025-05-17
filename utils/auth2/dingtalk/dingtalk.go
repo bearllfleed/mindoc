@@ -6,10 +6,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/mindoc-org/mindoc/utils/auth2"
 	"net/http"
 	"net/url"
 	"time"
+
+	"github.com/mindoc-org/mindoc/utils/auth2"
 )
 
 const (

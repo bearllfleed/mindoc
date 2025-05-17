@@ -3,8 +3,9 @@ package models
 
 import (
 	"errors"
-	"github.com/mindoc-org/mindoc/utils/auth2"
 	"time"
+
+	"github.com/mindoc-org/mindoc/utils/auth2"
 
 	"github.com/beego/beego/v2/client/orm"
 	"github.com/beego/beego/v2/core/logs"

@@ -168,7 +168,7 @@
             <div class="m-copyright">
                 <p>
                     <div id="view_count">{{i18n .Lang "doc.view_count"}}：{{.ViewCount}}</div>
-                    {{i18n $.Lang "doc.doc_publish_by"}} <a href="https://www.iminho.me" target="_blank">MinDoc</a> {{i18n $.Lang "doc.doc_publish"}}
+                    {{i18n $.Lang "doc.doc_publish_by"}} 牧牛火链 {{i18n $.Lang "doc.doc_publish"}}
                 </p>
             </div>
         </div>
