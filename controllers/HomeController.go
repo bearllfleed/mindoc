@@ -17,7 +17,9 @@ type HomeController struct {
 func (c *HomeController) Prepare() {
 	c.BaseController.Prepare()
 	//如果没有开启匿名访问，则跳转到登录页面
-	if !c.EnableAnonymous && c.Member == nil {
+	// 如果没有开启匿名访问，且用户未登录，且当前不是首页，则跳转到登录页面
+	_, actionName := c.GetControllerAndAction()
+	if !c.EnableAnonymous && c.Member == nil && actionName != "Index" {
 		c.Redirect(conf.URLFor("AccountController.Login")+"?url="+url.PathEscape(conf.BaseUrl+c.Ctx.Request.URL.RequestURI()), 302)
 	}
 }
